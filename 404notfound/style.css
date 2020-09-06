@@ -52,6 +52,8 @@ main {
 .main-image {
   height: 500px;
   width: 500px;
+  margin-right: 33px;
+
 }
 
 .main-image img {
@@ -96,6 +98,7 @@ footer {
   .main-image {
     height: 300px;
     width: 200px;
+    margin-left: 0;
   }
   main {
     width: 100%;
