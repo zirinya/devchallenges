@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 43%;
+    margin: 0 auto;
+    padding: 16px 0;
+    font-family: Poppins;
+    font-style: normal;
+   
+}
+
+header h2 {
+    font-family: PT Serif;
+    font-style: normal;
+    font-size: 36px;
+}
+
+
+.introduce-wrapper {
+    width: 220px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 8px 16px;
+}
+
+.member-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 218px);
+    grid-gap: 64px;
+    position: relative;
+
+}
+.member {
+    position: relative;
+}
+.position {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 92px;
+    right: -59px;
+
+}
+
+.member .position{
+    font-family: PT Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;text-transform: uppercase;
+
+}
+.member .name{
+    font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+
+font-size: 12px;text-transform: capitalize;
+}
+.name {
+    position: absolute;
+    bottom: 33px;
+}
+.member:nth-child(2),
+.member:nth-child(5) {
+    margin-top: 100px;
+}
+
+.member:nth-child(2) h6,
+.member:nth-child(5) h6 {
+    
+    bottom: -16px;
+}
+.member:nth-child(2) .position,
+.member:nth-child(5) .position {
+    top: 37px;
+}
+.member img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media(max-width:1500px) {
+    header {
+        width: 73%;
+    }
+}
+
+
+@media(max-width:800px) {
+    .member-wrapper {
+        grid-gap: 28px;
+    }
+    header {
+        width: 100%;
+        padding: 16px;
+    }
+
+}
+
+@media(max-width:500px) {
+    .member-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    header {
+        flex-direction: column;
+        width: 100%;
+    }
+    header h2 {
+        margin-bottom: 10px;
+    }
+
+    .member:nth-child(even) {
+        margin-top: 100px;
+    }
+    .member:nth-child(5) {
+        margin-top: 0;
+
+    }
+    .member:nth-child(even) h6 {
+        bottom: -10px;
+    }
+    .member:nth-child(5) h6 {
+        bottom: 39px;
+
+    }
+    .member:nth-child(even) .position {
+        top: 4px;
+    }
+
+    .member:nth-child(5) .position {
+        top: 52px;
+    }
+}
+footer{
+    padding:24px 0px;
+    text-align: center;
+  color: lightgray;
+  margin-top: 20px;
+}
