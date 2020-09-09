@@ -90,3 +90,36 @@ hr {
 input, select {
     vertical-align:middle;
 }
+nav{
+    border:1px solid red;
+ display: flex;
+ justify-content: space-between;   
+}
+nav > ul{
+    border: 1px solid red;
+    display: flex;
+}
+main{
+    height: 90vh;
+display: flex;
+
+justify-content: center;
+align-items: center;
+}
+.content-wrapper{
+    width: 100%;
+    border: 1px solid ;display: flex;
+}
+.content-paragraph{
+    border: 1px solid blue;
+}
+.content-interior{
+  
+    
+}
+.content-interior .interior{
+    height: 500px;
+    width: 60%;
+    border: 1px solid green;
+    border:1px solid blueviolet;
+}
