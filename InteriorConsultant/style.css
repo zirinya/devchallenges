@@ -297,3 +297,17 @@ footer {
     color: lightgray;
     margin-top: 20px;
 }
+@media(max-width:1500px){
+    nav {
+     
+        padding: 20px 60px;
+    }
+    .interior {
+      height:100%;
+      
+    }
+    .content-interior {
+        width: 58%;
+        margin-right: 58px;
+    }
+}
