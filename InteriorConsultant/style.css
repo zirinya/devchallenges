@@ -156,11 +156,11 @@ hr {
     padding: 0;
 }
 
-nav,
+
 main,
 footer,
 body {
-    background-color: black;
+    background-color: #181719;
     color: white;
 }
 
@@ -175,7 +175,7 @@ header {
 
 }
 
-ul>li {
+ul > li {
     margin-left: 140px;
 }
 
@@ -183,7 +183,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 190px;
+    padding: 39px 191px;
+    font-family: 'Montserrat', sans-serif;
+
 
 }
 
@@ -192,12 +194,11 @@ nav .logo {
     padding: 10px;
 }
 
-nav>ul {
+nav > ul {
 
     display: flex;
 }
 
-ul>li {}
 
 main {
     height: 90vh;
@@ -209,10 +210,9 @@ main {
 }
 
 .content-wrapper {
-    width: 100%;
+    width: 80%;
     display: flex;
-   
-    margin-top: 54px;
+    margin-top: 86px;
 }
 
 
@@ -222,7 +222,7 @@ main {
 
 .content-interior {
     position: relative;
-    width: 50%;
+    width: 91%;
 }
 
 
@@ -236,20 +236,19 @@ main {
 
 .interior {
     position: relative;
-    height: 586.53px;
     width: 100%;
-    margin: 0 auto;
+
 
 }
 
 .outter-wrapper {
     position: absolute;
     z-index: 999;
-    right: -10%;
+    right: -20%;
     bottom: -17%;
     transform: translate(-50%, 0);
     padding: 30px 1px 28px 26px;
-    background-color: black;
+    background-color: #181719;
     color: white;
 
 
@@ -257,9 +256,26 @@ main {
 
 .paragraph-detail {
     width: 50%;
-    margin: 0 auto;
-}
 
+}
+.paragraph-detail h1 {
+    font-size: 48px;
+
+}
+.paragraph-detail p {
+    margin-top: 60px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+.paragraph-detail a {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
 .profile-img {
     width: 50px;
     height: 50px;
@@ -292,22 +308,264 @@ main {
 }
 
 footer {
-    padding: 24px 0px;
+    padding: 24px 0;
     text-align: center;
     color: lightgray;
     margin-top: 20px;
 }
-@media(max-width:1500px){
+.textuppercase {
+    text-transform: uppercase;
+}
+.textcapitalized {
+    text-transform: capitalize;
+}
+.name {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15px;
+}
+.name h4 {
+    margin-bottom: 5px;
+}
+.name small {
+    font-size: 13px;
+
+}
+.hamburgur-bar {
+    display: none;
+}
+.material-icons {
+    font-size: 45px !important;
+}
+hr {
+    display: none
+}
+
+
+@media(max-width:1500px) {
     nav {
-     
-        padding: 20px 60px;
+
+        padding: 40px 85px;
     }
-    .interior {
-      height:100%;
-      
+    .content-wrapper {
+        width: 91%;
+
+        margin-top: 86px;
+    }
+    .paragraph-detail {
+        width: 59%;
     }
     .content-interior {
-        width: 58%;
-        margin-right: 58px;
+
+        width: 103%;
+    }
+    .outter-wrapper {
+
+        right: -22%;
+        bottom: -17%;
+        width: 353px;
+
+    }
+    ul > li {
+        margin-left: 75px;
+    }
+}
+@media(max-width:1200px) {
+    .outter-wrapper {
+        right: -28%;
+        bottom: -17%;
+    }
+    nav {
+        padding: 41px 10px;
+    }
+    .content-wrapper {
+        width: 97%;
+
+        margin-top: 86px;
+    }
+    .paragraph-detail {
+        width: 96%
+    }
+    .content-interior {
+
+        width: 198%;
+    }
+    ul > li {
+        margin-left: 57px;
+    }
+}
+@media(max-width:800px) {
+    hr {
+        display: block;
+        width: 80%;
+        margin: 0 auto 8px;
+    }
+    .hamburgur-bar {
+        display: block;
+    }
+
+    .outter-wrapper {
+        right: -181px;
+        bottom: -9%;
+    }
+    .content-interior {
+        width: 100%;
+    }
+    .list {
+        display: none;
+    }
+    .content-wrapper {
+        flex-direction: column;
+
+    }
+    .interior {
+
+        width: 100%;
+        height: 437px;
+    }
+    header {
+
+        width: 100%;
+        position: relative;
+
+    }
+    main {
+        height: auto;
+
+    }
+    .paragraph-detail a {
+
+        margin-top: 21px;
+
+    }
+    .paragraph-detail p {
+        margin-top: 15px;
+        font-size: 21px;
+    }
+
+    .content-wrapper {
+        width: 97%;
+        margin-top: 6px;
+    }
+}
+@media(max-width:500px) {
+
+    .content-interior {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .list {
+        display: none;
+    }
+    .content-wrapper {
+        flex-direction: column;
+
+    }
+    .interior {
+        width: 100%;
+        height: 437px;
+        margin: 0 auto;
+    }
+    header {
+
+        width: 100%;
+
+    }
+    main {
+        height: auto;
+
+    }
+    .paragraph-detail a {
+
+        margin-top: 21px;
+
+    }
+    .paragraph-detail p {
+        margin-top: 15px;
+        font-size: 21px;
+    }
+
+    nav {
+        padding: 20px 10px;
+    }
+    footer {
+        padding: 100px 0;
+        text-align: center;
+        color: lightgray;
+        margin-top: 20px;
+    }
+    header {
+        position: relative;
+    }
+    .content-wrapper {
+        width: 97%;
+        margin-top: 6px;
+    }
+    .wrapper {
+        width: 75%;
+    }
+    .paragraph-detail {
+        width: 83%;
+    }
+    .paragraph-detail p {
+        margin-top: 15px;
+        font-size: 17px;
+
+    }
+}
+
+@media(max-width:400px) {
+
+
+    .interior {
+        height: 376px;
+    }
+
+    .paragraph-detail a {
+
+        margin-top: 30px;
+
+    }
+    .paragraph-detail p {
+        margin-top: 40px;
+        font-size: 17px;
+        width: 83%;
+    }
+
+
+    .content-wrapper {
+        width: 97%;
+        margin-top: 6px;
+    }
+    .wrapper {
+        width: 85%;
+    }
+    .outter-wrapper {
+        width: 299px;
+        right: -155px;
+        bottom: -8%;
+    }
+
+
+    .paragraph-detail {
+        width: 95%;
+    }
+    .paragraph-detail p {
+        margin-top: 15px;
+        font-size: 17px;
+        width: 83%;
+    }
+    .paragraph-detail h1 {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:330px) {
+    .paragraph-detail h1 {
+        font-size: 39px;
+    }
+    .outter-wrapper {
+        width: 262px;
+        right: -138px;
+        bottom: -8%;
     }
 }
