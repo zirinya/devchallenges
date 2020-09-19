@@ -14,6 +14,7 @@ ol {
 
 header {
     padding: 35px 0px;
+    
 }
 
 header h1 {
@@ -26,18 +27,15 @@ header p {
 
 .header {
     width: 57%;
+    
 }
-
+.decfont{
+    font-family: 'Playfair Display', serif;
+}
 main {
 
     width: 60%;
     margin: 0 auto;
-}
-
-.recipe-wrapper {
-
-    border: 1px solid blue;
-
 }
 
 .content-3 {
@@ -48,6 +46,14 @@ main {
 
 .header-typo {
     font-size: 38px;
+    font-family: 'Playfair Display', serif;
+   
+    
+}
+.sub-header-typo{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-style: italic;
 }
 
 ol ol li::before {
