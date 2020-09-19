@@ -107,6 +107,11 @@ ol li::before {
     width: 90%;
     margin: 0 auto;
   }
+
+  .columns {
+    flex-direction: column-reverse;
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
