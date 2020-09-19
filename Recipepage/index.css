@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-ul, li, ol {
+ul,
+li,
+ol {
   margin: 0;
   padding: 0;
 }
@@ -76,6 +78,28 @@ ol li::before {
 
 .check_list li {
   margin-bottom: 16px;
+}
+
+.paragraphs {
+  display: flex;
+  align-items: flex-start;
+  padding: 5px;
+  font-style: italic;
+}
+
+.paragraphs img {
+  margin: 9px 9px 9px 0px;
+}
+
+@media (max-width: 800px) {
+  .header {
+    width: 100%;
+  }
+
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
