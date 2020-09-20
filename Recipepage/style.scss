@@ -1,59 +1,69 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+@import 'reset.scss';
 
-
-ul,
-li,
-ol {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    padding: 35px 0px;
-    
-}
-
-header h1 {
-    font-size: 38px;
-}
-
-header p {
-    font-size: 18px;
-}
 
 .header {
-    width: 57%;
-    
+    width: 67%;
 }
-.decfont{
+
+.decfont {
     font-family: 'Playfair Display', serif;
 }
+
 main {
+
+    width: 50%;
+    margin: 0 auto;
+}
+
+.content-3 {
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 8px 0px;
+}
+
+.content-3 ul {
 
     width: 60%;
     margin: 0 auto;
 }
 
-.content-3 {
-    border: 0.3px solid lightgray;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
+.content-3 ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 21px;
+}
+
+.content-3 ul li div small {
+    font-weight: 400;
+    color: lightgray;
+}
+
+.content-3 ul li div p {
+    font-weight: 600;
 }
 
 .header-typo {
-    font-size: 38px;
+    font-size: 30px;
     font-family: 'Playfair Display', serif;
-   
-    
+
+
 }
-.sub-header-typo{
+
+.material-icons {
+    font-size: 30px !important;
+    margin-right: 10px;
+}
+
+.orenge {
+    color: #F2994A;
+}
+
+.sub-header-typo {
     font-family: 'Playfair Display', serif;
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
+    margin: 30px 0px;
 }
 
 ol ol li::before {
@@ -66,32 +76,44 @@ ol ol ol li::before {
 
 ol {
     list-style: none;
-    counter-reset: my-awesome-counter;
 }
 
 li {
     counter-increment: my-awesome-counter;
+}
 
+ul {
+    list-style-position: inside;
 }
 
 ol li::before {
     content: counter(my-awesome-counter);
     background: #F2994A;
-    width: 2rem;
-    height: 2rem;
-
+    min-width: 40px;
+    height: 37px;
+    flex-wrap: nowrap;
+    font-size: 26px;
     display: inline-block;
     line-height: 2rem;
     color: white;
     text-align: center;
     margin-right: 0.5rem;
     border-radius: 8px;
+    font-family: 'Playfair Display', serif;
 }
 
+
 .check_list li {
+    margin-bottom: 6px;
+    display: flex;
 
-    margin-bottom: 16px;
+}
 
+.check_list_1 li {
+    margin-bottom: 24px;
+    display: flex;
+
+    padding-left: 10px;
 }
 
 .paragraphs {
@@ -101,17 +123,44 @@ ol li::before {
     font-style: italic;
 }
 
+.link {
+    text-decoration: none;
+    color: lightgray;
+
+
+}
+
+input[type='checkbox'] {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    margin-right: 10px;
+}
+
+input[type='checkbox']:checked {
+    background: #F2994A;
+}
+
 .paragraphs img {
     margin: 9px 9px 9px 0px;
 }
-@media (max-width:800px){
-    .header {
-      width: 100%; 
-    }
-    main {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .columns{  flex-direction: column-reverse;
-        display: flex; }
+
+.cover-img {
+    margin-bottom: 50px;
 }
+
+footer {
+    padding: 24px 0px;
+    text-align: center;
+    color: lightgray;
+    margin-top: 20px;
+}
+
+.link {
+    display: flex;
+}
+
+@import 'response.scss';
