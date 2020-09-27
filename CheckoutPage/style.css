@@ -1,0 +1,75 @@
+.primary {
+    background-color: #F2994A !important;
+    color: white !important;
+}
+
+.button.is-active,
+.button:active {
+    border-color: #F2994A !important;
+}
+
+button {
+    width: 100% !important;
+}
+
+.bg-color {
+
+    background-color: #F2F2F2;
+    border-radius: 8px;
+    height: 100%;
+    padding-right: 40px;
+}
+
+.name-list h6 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.font-color {
+    color: #F2994A;
+}
+
+.discount {
+    text-decoration-line: line-through;
+    font-size: 9px;
+}
+
+.input {
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.columns {
+    justify-content: space-between;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.p-img {
+    height: 160px;
+
+
+}
+
+.p-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:1024px) {
+    .flex {
+        flex-direction: column-reverse !important;
+
+    }
+}
